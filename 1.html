@@ -16,16 +16,27 @@
     <!-- style == CSS문법에 맞게 처리해라 -->
     <style> 
         a {
-            color:skyblue;
+            color:black;
             text-decoration: none;
         }
+        h1 {
+            font-size:45px;
+            text-align: center;
+        }
+        .saw {
+            color:gray;
+        }
+        #active {
+            color:red;
+        }        
     </style>
+    <!-- tag < class < id   -->
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-        <li><a href="1.html" style="color:red;text-decoration: underline;">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
+        <li><a href="1.html" class="saw" id="active">HTML</a></li>
+        <li><a href="2.html" class="saw">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
     <!-- html식 폰트 입력 방법
@@ -56,7 +67,7 @@
         Browsers do not display the HTML tags but use them to interpret the content of the page.
     </p>
     <p>
-        <!-- 댓글 기능 -->
+        <!-- 댓글 기능(Disqus) -->
         <div id="disqus_thread"></div>
         <script>
             /**
@@ -104,7 +115,9 @@
       <a href="주소" target="_blank"(새 탭으로 열기) title="하이퍼 텍스트에 가져다 놓으면 툴팁이 뜨게">
     
 
+      selector -> a {
+          declaration -> color(property):red(value);
+        }
 
-
-
+       id의 값은 단 한번만 등장해야함.
 -->
